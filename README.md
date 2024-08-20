@@ -1,2 +1,2 @@
 # MixStar.github.io
-# a new web
+# Instructional Resource Test
