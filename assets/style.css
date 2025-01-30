@@ -561,4 +561,53 @@ button:active, .role-btn:active, .dashboard-btn:active, .like-btn:active, .comme
     }
 }
 
+/* 新增入口按钮样式 */
+.entry-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.entry-button:hover {
+    background-color: #0056b3;
+}
+.entry-button i {
+    margin-right: 10px;
+}
+
+/* Combined Field Motion Page Layout */
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section.dynamic-model {
+    flex: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.section.example-problems-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section.example-problems,
+.section.ai-assistant {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+}
 
