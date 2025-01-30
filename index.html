@@ -3,111 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instructional Resource Test</title>
-    <link rel="stylesheet" href="https://mixstars.github.io/MixStar/assets/web.css">
-    <script src="https://mixstars.github.io/MixStar/assets/web.js"></script>
+    <title>乐动物理 - 在线物理教学平台</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="titlog">Instructional Resource</div>
-        <div>
-            <a class="titab" href="https://mixstars.github.io/MixStar/index.html">首页</a>
-            <a class="titab" href="https://mixstars.github.io/MixStar/data/coming_soon.html">分类</a>
-            <a class="titab" href="https://mixstars.github.io/MixStar/data/coming_soon.html">关于</a>
-        </div>
-    </div>
-
-    <div class="carousel">
-        <div class="carousel-images" id="carousel-images">
-            <div class="carousel-image">
-                <a href="https://mixstars.github.io/MixStar/data/coming_soon.html"><img src="https://mixstars.github.io/MixStar/imgs/B.png" alt="图片1"></a>
+    <header>
+        <nav class="sidebar">
+                <div class="logo">
+                    <h1>乐动物理</h1>
+                </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="teacher.html">教师主页</a></li>
+                    <li><a href="student.html">学生主页</a></li>
+                    <li><a href="forum.html">讨论区</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
             </div>
-            <div class="carousel-image">
-                <a href="https://mixstars.github.io/MixStar/data/coming_soon.html"><img src="https://mixstars.github.io/MixStar/imgs/G.png" alt="图片2"></a>
+        </nav>
+        <div class="logob"></div>
+    </header>
+
+    <main class="container">
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="搜索课程、实验或模型...">
+            <button id="search-btn">搜索</button>
+        </section>
+        <section class="role-selection">
+            <h2>请选择您的身份</h2>
+            <div class="role-cards">
+                <div class="role-card teacher-card">
+                    <h3>教师入口</h3>
+                    <a href="teacher.html" class="role-btn">进入教师主页</a>
+                </div>
+                <div class="role-card student-card">
+                    <h3>学生入口</h3>
+                    <a href="student.html" class="role-btn">进入学生主页</a>
+                </div>
             </div>
-            <div class="carousel-image">
-                <a href="https://mixstars.github.io/MixStar/data/coming_soon.html"><img src="https://mixstars.github.io/MixStar/imgs/O.png" alt="图片3"></a>
+        </section>
+
+        <section class="features">
+            <h2>特色板块</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>物理学史</h3>
+                    <p>探索物理学的发展历程和重要人物。</p>
+                    <a href="history.html" class="feature-btn">了解更多</a>
+                </div>
+                <div class="feature-card">
+                    <h3>物理例题</h3>
+                    <p>学习经典物理例题，提升解题能力。</p>
+                    <a href="examples.html" class="feature-btn">查看详情</a>
+                </div>
+                <div class="feature-card">
+                    <h3>物理的应用</h3>
+                    <p>了解物理学在现实生活中的应用。</p>
+                    <a href="applications.html" class="feature-btn">查看应用</a>
+                </div>
             </div>
-            <div class="carousel-image">
-                <a href="https://mixstars.github.io/MixStar/data/coming_soon.html"><img src="https://mixstars.github.io/MixStar/imgs/R.png" alt="图片4"></a>
-            </div>
-            <div class="carousel-image">
-                <a href="https://mixstars.github.io/MixStar/data/coming_soon.html"><img src="https://mixstars.github.io/MixStar/imgs/Y.png" alt="图片5"></a>
-            </div>
-
-        </div>
-    </div>
-    <div class="carousel-ind" id="carousel-ind"></div>
-
-    <script>
-        const images = document.getElementById('carousel-images');
-        const indContainer = document.getElementById('carousel-ind');
-        const totalImages = document.querySelectorAll('.carousel-image').length;
-        let currentIndex = 0;
-
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalImages;
-            updateCarousel();
-        }, 3000);
-
-        updateind();
-
-    </script>
-
-    <div class="tabs">
-        <a href="https://mixstars.github.io/MixStar/data/Engine_working_simulation.html" target="_blank">
-            <button>发动机工作模拟</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/Schematic_diagram_of_atomic_structure.html" target="_blank">
-            <button>原子结构示意图</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/Specific_heat_capacity.html" target="_blank">
-            <button>比热容实验动画</button></a>
-    </div>
-
-    <div class="tabs">
-        <a href="https://mixstars.github.io/MixStar/data/lever.html" target="_blank">
-        <button>杠杆模型</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/Pulley_block.html" target="_blank">
-        <button>滑轮组</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/Movement_of_molecules.html" target="_blank">
-        <button>分子的运动</button></a>
-    </div>
-
-    <div class="tabs">
-        <a href="https://mixstars.github.io/MixStar/data/Effect_of_pressure.html" target="_blank">
-        <button>压力的作用效果</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/Bar_magnets.html" target="_blank">
-        <button>条形磁铁</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/Communicators.html" target="_blank">
-        <button>连通器</button></a>
-    </div>
-
-    <div class="tabs">
-        <a href="https://mixstars.github.io/MixStar/data/Barometric _ressure_model.html" target="_blank">
-        <button>气压模型</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/Movement_and_stillness.html" target="_blank">
-        <button>动与静</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/Convex.html" target="_blank">
-        <button>凸透镜</button></a>
-    </div>
-
-    <div class="tabs">
-        <a href="https://mixstars.github.io/MixStar/data/Fast_and_slow.html" target="_blank">
-        <button>快与慢</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/coming_soon.html" target="_blank">
-        <button>***</button></a>
-        <a href="https://mixstars.github.io/MixStar/data/coming_soon.html" target="_blank">
-        <button>***</button></a>
-    </div>
-    
-    <div class="watermark"><p>Instructional Resource MNNU</p></div>
-    <div class="watermark"><p>Instructional Resource MNNU</p></div>
-    <div class="watermark"><p>Instructional Resource MNNU</p></div>
-    <div class="watermark"><p>Instructional Resource MNNU</p></div>
+        </section>
+    </main>
 
     <footer>
-        <p>关注我们: <a href="https://mixstars.github.io/MixStar/data/coming_soon.html" style="color: #1DA1F2;">####</a></p>
-        <p>制作人员: <a href="https://mixstars.github.io/MixStar/data/coming_soon.html" style="color: black;">####</a></p>
+        <div class="container">
+            <p>&copy; 2025 乐动物理. 版权所有.</p>
+        </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
