@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讨论区 - 乐动物理</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>乐动物理</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="teacher.html">教师主页</a></li>
+                    <li><a href="student.html">学生主页</a></li>
+                    <li><a href="forum.html" class="active">讨论区</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="logob"></div>
+    </header>
+
+    <main class="container">
+        <section class="forum-section">
+            <div class="post-form">
+                <textarea id="post-input" placeholder="分享你的想法..."></textarea>
+                <button id="post-btn">发表</button>
+            </div>
+            <div class="posts">
+                <!-- 示例帖子 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="images/avatar.jpg" alt="用户头像" class="avatar">
+                        <span class="username">用户1</span>
+                    </div>
+                    <div class="post-content">
+                        这是一个示例帖子内容。
+                    </div>
+                    <div class="post-actions">
+                        <button class="like-btn">点赞</button>
+                        <button class="comment-btn">评论</button>
+                    </div>
+                </div>
+                <!-- 更多帖子将动态添加 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 乐动物理. 版权所有.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
